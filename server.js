@@ -8,8 +8,6 @@ dotenv.config();
 
 const app = express();
 
-// Ok
-
 // Middleware
 app.use(cors({
   origin: "*",
@@ -18,11 +16,6 @@ app.use(cors({
 }));
 
 app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.send("Backend is running ✅");
-});
-
 
 // Routes
 app.use("/api/forms", formRoutes);
