@@ -10,10 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: [
-    process.env.CLIENT_ORIGIN,  // production frontend
-    "http://localhost:5173"     // local frontend
-  ],
+  origin: "*",
   methods: ["GET", "POST", "DELETE"],
   allowedHeaders: ["Content-Type", "x-admin-password"]
 }));
