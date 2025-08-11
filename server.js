@@ -8,6 +8,8 @@ dotenv.config();
 
 const app = express();
 
+// Ok
+
 // Middleware
 app.use(cors({
   origin: "*",
